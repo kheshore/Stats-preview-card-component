@@ -1,0 +1,95 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: Inter ;
+    src: url('Inter-VariableFont_slnt,wght.ttf');
+}
+@font-face {
+    font-family: LexendDeca;
+    src: url('LexendDeca-VariableFont_wght.ttf');
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    color: azure;
+    gap: 5px;
+}
+cont{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    border-radius: 10px;
+}
+#tbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+    width: 60vh;
+    height: 540;
+    padding-right: 30px;
+}
+h1{
+    font-family: LexendDeca;
+}
+h2{
+    font-weight: 700;
+}
+#sp{
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: LexendDeca;
+}
+#t1{
+    color: hsl(277, 64%, 61%);
+}
+#t2{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-size: 15px;
+}
+#tb1{
+    display: flex;
+    justify-content: space-between;
+}
+#im{
+    position: absolute;
+    padding: 223px 270px 223px 270px;
+    width: inherit;
+    background-color: hsla(277, 64%, 61%, 0.5);
+    border-radius: 0 10px 10px 0;
+}
+img{
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+cont{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+#im, img{
+    border-radius: 0;
+}
+#tb2{
+    text-align: center;
+}
+#tb1{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#tbox{
+    padding-right: 0;
+}
+}
